@@ -1,0 +1,127 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: monospace;
+}
+body{
+  /* background: url(./SL-043021-42650-28.jpg); */
+  background-color:rgba(0, 0, 139, 0.726);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: antiquewhite;
+  backdrop-filter: blur(5px);
+}
+.navbar{
+  width: 10%;
+  /* border: 1px solid black; */
+  margin: 10px auto;
+  padding: 4px 10px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 20px;
+  /* background: rgba(240, 128, 128, 0.733); */
+  color: white;
+  padding: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.main-container{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.sidebar{
+  border-right: 1px solid gray;
+  padding: 10px ;
+  box-sizing: border-box;
+  width: 40%;
+}
+.main , .sidebar{
+  /* border: 1px solid black; */
+  min-height: 100vh;
+}
+.main{
+  min-height: 100vh;
+}
+.main,.card,.new-card{
+  width: 60%;
+  background: rgba(240, 248, 255, 0.76);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  color: black;
+  padding: 6px;
+  box-sizing: border-box;
+  font-size: 15px;
+  margin: 5px auto;
+}
+.active{
+  background: rgba(111, 176, 233, 0.76);
+}
+
+.card{
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+  /* box-shadow: 0px 0px 4px black; */
+  min-height: 4rem;
+  /* text-shadow: 0px 0px 10px black; */
+  
+
+}
+.notes{
+  font-size: 30px;
+}
+.new-card{
+  border: none;
+  margin-top: 20px;
+  font-size: 30px;
+  text-shadow: 0px 0px 20px black;
+  width: 20%;
+  margin-right: auto;
+}
+.new-card:hover{
+  background-color: antiquewhite;
+}
+.btn{
+  border: none;
+  border-radius: 5px;
+  padding: 4px;
+  cursor: pointer;
+}
+.delete-btn{
+  position: absolute;
+  bottom: 5px;
+  right: 9px;
+  background-color: rgba(231, 122, 122, 0.979);
+}
+.add-title{
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  display: block;
+  padding: 4px 13px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 10px auto;
+}
+.note-area{
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+}
+.note-area:focus{
+  outline: none;
+  border: none;
+}
+.display{
+  font-family: inherit;
+  border-top: 1px solid gray;
+  margin: 10px auto;
+  overflow-wrap: break-word;
+  padding: 10px 20px;
+}
